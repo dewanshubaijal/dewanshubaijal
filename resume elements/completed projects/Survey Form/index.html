@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Course exit survey form</h1>
+    <p id="description"><em>Thank you for taking part in the course.</em></p>
+    <form id="survey-form" action="" method="post">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="full-name" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" name="email"  placeholder="Enter email address" required /></label>
+        <label id="age" for="year-of-birth">Year of Birth
+          <select id="dropdown" required>
+            <option value="" id="first-option">Select Year</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+          </select>
+        </label>
+        <label id="number-label" for="number">Birthday Month (Optional) <input id="number" type="number" name="birthday-month" value="birthday-month" min="1" max="12" step="1" placeholder="Enter your birthday month" /></label>
+      </fieldset>
+      <fieldset class="skills">
+        <legend>Which skills you have learnt till now from our course? (select all that apply)</legend>
+          <label for="html"><input type="checkbox" id="html" name="skills" value="html" checked/> HTML</label>
+          <label for="css"><input id="css" type="checkbox" name="skills" value="css" checked/> CSS</label>
+          <label for="javascript"><input id="javascript" type="checkbox" name="skills" value="javascript" /> Javascript</label>
+          <label for="jQuery"><input id="jQuery" type="checkbox" name="skills" value="jquery" /> jQuery</label>
+      </fieldset>
+      <fieldset class="audience">
+        <legend>How did you hear about us?</legend>
+          <label for="blog-website"><input type="radio" id="blog-website" value="blog-website" name="Audience" checked /> Blog website</label>
+          <label for="friend"><input type="radio" id="friend" value="friend" name="Audience" /> Friend</label>
+          <label for="colleague"><input type="radio" id="colleague" value="colleague" name="Audience" /> Colleague</label>
+          <label for="youtube-channel"><input type="radio" id="youtube-channel" value="youtube-channel" name="Audience" /> Youtube Channel</label>
+      </fieldset>
+      <fieldset class="rating">
+        <legend>On a scale of 1-5, how much would you rate this course?</legend>
+          <label for="5-rating"><input type="radio" id="5-rating" name="rating" value="5" checked /> 5</label>
+          <label for="4-rating"><input type="radio" id="4-rating" name="rating" value="4" /> 4</label>
+          <label for="3-rating"><input type="radio" id="3-rating" name="rating" value="3" /> 3</label>
+          <label for="2-rating"><input type="radio" id="2-rating" name="rating" value="2" /> 2</label>
+          <label for="1-rating"><input type="radio" id="1-rating" name="rating" value="1" /> 1</label>
+          <label for="no-rating"><input type="radio" id="no-rating" name="rating" value="unrated" /> Prefer not to say</label>
+        </fieldset>
+      <fieldset>
+        <label for="suggestions">Any comments or suggestions? <textarea id="suggestions" placeholder="Enter your comments here..." rows="7" cols="30"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

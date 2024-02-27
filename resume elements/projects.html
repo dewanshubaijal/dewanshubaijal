@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dewanshu Baijal Resume</title>
+    <link href="../css/resume.css" rel="Stylesheet" />
+
+    <style>
+       /* css for navigation sections specifically for projects page */
+       /* .navigation-area .sections > div {
+        margin: 50px 0px;
+      } */
+      
+      /* css for changing font color of the current section in the navigation area */
+      .navigation-area .sections .projects h3 {
+        color: #273A3E;
+      }
+      /* css for content of the the current section */
+      
+      .current-projects .project-1 {
+        display: grid;
+        grid-template-columns: 1.5fr 4fr;
+        gap: 15px;
+      }
+
+      /* completed projects */
+      .completed-projects {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        
+      }
+      .completed-projects .projects {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .completed-projects img {
+        height: 200px;
+        width: 200px;
+      }
+      .completed-projects .project-information {
+        text-align: left;
+      }
+
+      .project-heading h4 {
+        font-family: serif;
+        font-size: 1.2rem;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- grid to divide the webpage into 2 sections column wise-One for sidebar, other for main content area and footer area with column-span=2 -->
+    <!--navigation section -->
+    <div class="navigation-area">
+      <div class="nameNpic">
+        <div>
+          <img
+            src="../images/profilepic.jpg"
+            alt="Dewanshu Baijal Picture"
+            height="100"
+          />
+        </div>
+        <div>
+          <h2>Dewanshu Baijal</h2>
+        </div>
+      </div>
+      <div class="sections">
+        <div class="projects">
+          <a href="./projects.html"><h3>Projects</h3></a>
+        </div>
+        <div class="skills">
+          <a href="./skills.html"><h3>Skills</h3></a>
+        </div>
+        <div class="education">
+          <a href="./education.html"><h3>Education</h3></a>
+        </div>
+        <div class="hobNinterest">
+          <a href="./hobNinterest.html"><h3>Hobbies & Interests</h3></a>
+        </div>
+        <div class="contact">
+          <a href="./contact.html"><h3>Contact</h3></a>
+        </div>
+      </div>
+      <div class="brief-overview">
+        <p>switch back to</p>
+        <!-- make a button using div container -->
+        <div class="button-container">
+        <a href="../index.html"
+          ><div class="button"><h3>Brief Overview</h3></div></a
+        >
+        </div>
+      </div>
+    </div>
+
+    <!--main content area -->
+    <div class="content-area">
+      <!-- content for Projects section -->
+      <div class="heading">
+        <h1>My Projects </h1>
+      </div>
+      <div class="section-details">
+        <!-- grid while using snapshots for each Project. -->
+        <div class="completed-projects">
+          
+          <div class="projects project-7">
+            <div class="project-heading">
+              <h4>Simon Game</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/simonGame.png"
+                alt="Simon Game website"
+              />
+              <a
+                href="./completed projects/Simon Game Challenge Starting Files/index.html"
+                target="_blank"
+                ><p>Simon Game website link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                Applied knowledge of HTML, CSS, JavaScript and jQuery to build Simon Game. The game proceeds by generation of string of colors in random order and user have to follow the order at every level in order to progress in game.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-6">
+            <div class="project-heading">
+              <h4>Drum Kit</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/Drum Kit.png"
+                alt="Drum kit website"
+              />
+              <a
+                href="./completed projects/Drum Kit Starting Files/index.html"
+                target="_blank"
+                ><p>Drum Kit </p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                Applied knowledge of HTML, CSS and JavaScript to build this Drum Kit which plays different sounds on clicking on the respective buttons or using the corresponding keyboard keys.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-5">
+            <div class="project-heading">
+              <h4>Dice Game</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/diceGame.png"
+                alt="Dice Game Website"
+              />
+              <a
+                href="./completed projects/Dicee Challenge - Starting Files/dicee.html"
+                target="_blank"
+                ><p>Web Design Project link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                Used various sounds to create a band like feeling. Applied knowledge of HTML, CSS, JavaScript to build this Dice Game which tells which player will win based on the number on the dice.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-4">
+            <div class="project-heading">
+              <h4>Survey Form</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/survey form.png"
+                alt="Course exit survey form"
+              />
+              <a
+                href="./completed projects/Survey Form/index.html"
+                target="_blank"
+                ><p>Survey Form website link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                Applied knowledge of HTML and CSS in building a course exit survey form and learned accessibility practices while building this project for easy navigation and understanding of the code while re-visiting.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-3">
+            <div class="project-heading">
+              <h4>Web Design Project</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/web-design project.png"
+                alt="Web Design Project"
+              />
+              <a
+                href="https://dewanshubaijal.my.canva.site/the-maharaja-palace"
+                target="_blank"
+                ><p>Web Design Project link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                This project is made with the help of Canva as a first time
+                practice for web design.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-2">
+            <div class="project-heading">
+              <h4>Capstone Project 2</h4>
+            </div>
+            <div class="project-snapshot">
+              <img
+                src="../images/capstone project-2.png"
+                alt="Capstone Project 2"
+              />
+              <a href="../index.html" target="_blank"
+                ><p>Capstone Project 2 link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                This project is made purely on CSS and HTML. The landing page is
+                the brief overview page about me and and resume page which is
+                combination of 5 webpages.
+              </p>
+            </div>
+          </div>
+          <div class="projects project-1">
+            <div class="project-heading">
+              <h4>Capstone Project 1</h4>
+            </div>
+            <div class="project-snapshot">
+              <img src="../images/capstone project-1.png" alt="Capsone" />
+              <a
+                href="./completed projects/Capstone Project -1/capstone-project-1.html"
+                target="_blank"
+                ><p>Capstone Project 1 link</p></a
+              >
+            </div>
+            <div class="project-information">
+              <p>
+                This is the first ever Capstone Project built by me. It is made
+                purely on HTML
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="footer">
+      <footer>
+        <small> ©️ Dewanshu Baijal. All Rights Reserved. </small>
+      </footer>
+    </div>
+  </body>
+</html>

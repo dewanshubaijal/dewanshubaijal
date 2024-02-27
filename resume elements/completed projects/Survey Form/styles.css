@@ -1,0 +1,82 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #1D24CA;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-image: linear-gradient(90deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+#description {
+  margin-top: 0;
+  font-weight: 100;
+}
+
+#survey-form {
+  width: 60vw;
+  max-width: 650px;
+  min-width: 550px;
+  margin: 0 auto 20px auto;
+  background-color: #070F2B;
+  opacity: 0.75;
+  border: 2px solid #070F2B;
+  border-radius: 10px;
+  padding: 0 2rem;
+  font-size: 22px;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+input, select, textarea {
+  margin: 10px 0 20px 0;
+  width: 100%;
+  min-height: 2em;
+  padding: 0 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #F6F5F5;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: 20px;
+  height: 10px;
+  vertical-align: middle;
+  margin: 5px 0.3em;
+}
+
+.skills > label, .audience > label {
+  display: block;
+}
+
+.rating > label {
+  margin-right: 1.7rem;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin: 10px 22%;
+  background-color: rgba(0, 255, 0, 0.9);
+  color: white;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active  {
+  background-color: #211951;
+}

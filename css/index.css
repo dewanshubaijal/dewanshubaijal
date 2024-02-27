@@ -1,0 +1,235 @@
+
+/* css for title section */
+#title {
+  background: linear-gradient(300deg, beige, white, beige);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+#title > .grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+} 
+#title > .grid-container h1 {
+  margin: 0px;
+  font-size: 4rem;
+  font-family: 'Acme', sans-serif;
+  font-weight: lighter;
+}
+#title > .grid-container h2 {
+  margin: 10px 0px;
+  text-align: right;
+  font-family: 'Shantell Sans', cursive;
+}
+
+/* css for brief_intro section */
+#brief_intro {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 2px solid black; */
+  /* border-bottom: 2px solid black; */
+}
+#brief_intro .container {
+  width: 400px;
+  height: 300px;
+  text-align: center;
+}
+.profilepic > img {
+height: 110px;
+width: 100px;
+border: 1px solid black;
+border: none;
+border-radius: 50%;
+}
+#brief_intro .container #hello {
+  font-family: 'Borel', cursive;
+  letter-spacing: 0.5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 10px 10px 10px;
+  height: 3rem;
+  background: linear-gradient(90deg, yellow, orange, rgb(135, 135, 240), lightblue); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+#brief_intro .container #intro { 
+  font-size: 1.1rem;
+  font-family:'Shantell Sans', cursive;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+#brif_intro .container #intro #CnH {
+  color: white;
+}
+
+/* css for skills section */
+#skills > .grid-container {
+  margin: 50px 0px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 4fr 0.5fr;
+  grid-template-rows: 1fr;
+  height: 250px;
+}
+#skills .grid-container > .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills .grid-container > .heading p {
+  margin: 0px;
+  font-size: 5rem;
+  /* font-family: 'Enriqueta', serif; */
+  font-family: 'Acme', sans-serif;
+  /* opacity: 0.7; */
+}
+/* #skills .grid-container .background {
+  grid-area: 1 / 2 / 2 / 5;
+  background: linear-gradient(300deg, rgba(236, 236, 170, 0.226), rgba(255, 166, 0, 0.194), rgba(0, 255, 55, 0.189));   
+  border-radius: 10px;
+} */
+#skills .grid-container > .grid-container {
+  margin: 5px;
+  grid-area: 1 / 3 / 2 / 4;
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  text-align: center;
+  font-family: 'Laila', serif;
+  font-weight: bold;
+}
+
+.skill {
+  min-height: 50px;
+}
+.skill.timeMngmnt {
+  grid-area: 19 / 1 / 21 / 7;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 50px;
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+.skill.leadership {
+  grid-area: 19 / 12 / 21 / 18 ; 
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 50px;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.skill.excel {
+  grid-area: 2 / 17 / 7 / 21;
+  border: 2px solid none;
+  background-color: rgb(172, 238, 172);
+  min-width: 65px;
+  max-width: 120px;
+}
+.skill.javascript {
+  grid-area: 2/ 11 / 7 / 16;
+  border: 2px solid black;  
+  background: linear-gradient(90deg, rgba(128, 119, 0, 0.6) 30%, rgba(204, 190, 0, 0.6));
+  min-width: 100px;
+  max-width: 200px;
+}
+.skill.html {
+  grid-area: 1 / 1 / 7 / 4;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: conic-gradient(rgba(239, 186, 86, 0.6), rgba(227, 211, 0, 0.6));
+  min-width: 65px;
+  max-width: 120px;
+}
+.skill.css {
+  grid-area: 1 / 5 / 8 / 9;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: conic-gradient(rgba(95, 95, 241, 0.6), rgba(0, 0, 255, 0.6));
+  min-width: 70px;
+}
+.skill.bootstrap {
+  grid-area: 10 / 4 / 14 /  10;
+  border: 2px solid black;
+  background: radial-gradient(rgba(6, 6, 255, 0.6), rgba(225, 0, 255, 0.6));
+  min-width: 100px;
+}
+.skill.jQuery {
+  grid-area: 10 / 13 / 16 / 17;
+  border: 2px solid blue;
+  border-radius: 50%;
+  min-width: 60px;
+  max-width: 90px;
+  
+}
+#skills .copyright {
+  opacity: 0.2;
+  min-width: 150px;
+  grid-area: 14 / 8 / 16 / 14;
+}
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill p {
+  margin: 0px;
+}
+
+/* css for resume section  */
+#resume {
+  margin: 100px 0px 50px 0px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 3fr repeat(5, 1fr);
+  grid-template-columns: 3fr repeat(4, 1fr) 3fr;
+}
+#resume .sub-heading {
+  font-size: 4rem;
+  margin: 0px 0px 0px 20px;
+  grid-column: span 6;
+  /* font-family: georgia; */
+  /* font-family: 'Enriqueta', serif; */
+  font-family: 'Acme', sans-serif;
+  /* opacity: 0.7; */
+}
+#resume .resume-button {
+  grid-area: 3 / 3 / 5 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-width: 200px;
+}
+#resume .resume-button div {
+  background-color: beige;
+  border: 5px solid #B9B4C7;
+  text-align: center;
+}
+#resume .resume-button div h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* color: #331D2C; */
+  margin: 5px;
+  font-size: 2rem; 
+}
+
+/* css for footer section */
+#footer {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: rgba(194, 191, 191, 0.648);
+  height: 150px;
+
+}
+#footer footer {
+  color: black;
+}
+
